@@ -7,14 +7,14 @@ namespace AppModelo.Controller.Cadastros
 {
     public class NacionalidadeController
     {
-        public bool Cadastrar(string descricao, bool ativo)
+        public bool Cadastrar(string descricao)
         {
             var repositorio = new NacionalidadeRepository();
 
-            var nacionalidade = repositorio.ObterPorDescricao (descricao);
-            if (nacionalidade is not null) return false;
+            var nacionalidade = repositorio.Inserir(descricao);
+            if (nacionalidade is false) return false;
 
-            var resposta = repositorio.Inserir(descricao, ativo);
+            var resposta = repositorio.Inserir(descricao);
             return resposta;
         }
 

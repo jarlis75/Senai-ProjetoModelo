@@ -49,7 +49,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(12, 272);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(123, 38);
-            this.btnSalvar.TabIndex = 11;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "Inserir";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -60,7 +60,7 @@
             this.txtId.Location = new System.Drawing.Point(12, 62);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(55, 20);
-            this.txtId.TabIndex = 8;
+            this.txtId.TabIndex = 0;
             // 
             // label2
             // 
@@ -109,7 +109,7 @@
             this.gvNaturalidades.Location = new System.Drawing.Point(12, 99);
             this.gvNaturalidades.Name = "gvNaturalidades";
             this.gvNaturalidades.Size = new System.Drawing.Size(404, 166);
-            this.gvNaturalidades.TabIndex = 14;
+            this.gvNaturalidades.TabIndex = 2;
             // 
             // errorProvider
             // 
@@ -120,14 +120,14 @@
             this.txtDescricao.Location = new System.Drawing.Point(83, 62);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(152, 20);
-            this.txtDescricao.TabIndex = 15;
+            this.txtDescricao.TabIndex = 1;
             // 
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(293, 271);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(123, 38);
-            this.btnExcluir.TabIndex = 16;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -137,7 +137,7 @@
             this.btnAtualizar.Location = new System.Drawing.Point(152, 271);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(123, 38);
-            this.btnAtualizar.TabIndex = 17;
+            this.btnAtualizar.TabIndex = 4;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click_1);

@@ -28,7 +28,7 @@ namespace AppModelo.View.Windows.Cadastros
             var controller = new NacionalidadeController();
             var descricaoMaiuscula = txtDescricao.Text.ToUpper();
 
-            var resposta = controller.Cadastrar(descricaoMaiuscula, chkAtivo.Checked);
+            var resposta = controller.Cadastrar(descricaoMaiuscula);
 
             MessageBox.Show("Naturalidade cadastrada com Sucesso");
         }

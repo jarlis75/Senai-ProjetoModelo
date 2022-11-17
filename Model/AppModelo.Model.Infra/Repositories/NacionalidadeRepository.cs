@@ -11,7 +11,7 @@ namespace AppModelo.Model.Infra.Repositories
     {   
         //CRUD - create - read   - update - delete
         //       insert - select - update - delete  
-        public bool Inserir(string descricao, bool ativo)
+        public bool Inserir(string descricao)
         {
             //string interpolation
             var sql = $"INSERT INTO nacionalidade (descricao) VALUES ('{descricao}')";
