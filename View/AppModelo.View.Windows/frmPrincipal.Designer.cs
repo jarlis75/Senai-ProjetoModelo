@@ -33,16 +33,22 @@
             this.funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nacionalidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.naturalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nacionalidadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.naturalidadeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem});
+            this.cadastroToolStripMenuItem,
+            this.cadastroDeFuncionarioToolStripMenuItem,
+            this.nacionalidadeToolStripMenuItem,
+            this.naturalidadeToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(573, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(440, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,12 +83,31 @@
             this.naturalidadeToolStripMenuItem.Text = "Naturalidade";
             this.naturalidadeToolStripMenuItem.Click += new System.EventHandler(this.naturalidadeToolStripMenuItem_Click);
             // 
+            // cadastroDeFuncionarioToolStripMenuItem
+            // 
+            this.cadastroDeFuncionarioToolStripMenuItem.Name = "cadastroDeFuncionarioToolStripMenuItem";
+            this.cadastroDeFuncionarioToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
+            this.cadastroDeFuncionarioToolStripMenuItem.Text = "Cadastro De Funcionario";
+            // 
+            // nacionalidadeToolStripMenuItem
+            // 
+            this.nacionalidadeToolStripMenuItem.Name = "nacionalidadeToolStripMenuItem";
+            this.nacionalidadeToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.nacionalidadeToolStripMenuItem.Text = "Nacionalidade";
+            // 
+            // naturalidadeToolStripMenuItem1
+            // 
+            this.naturalidadeToolStripMenuItem1.Name = "naturalidadeToolStripMenuItem1";
+            this.naturalidadeToolStripMenuItem1.Size = new System.Drawing.Size(87, 20);
+            this.naturalidadeToolStripMenuItem1.Text = "Naturalidade";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(573, 282);
+            this.ClientSize = new System.Drawing.Size(440, 282);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Red;
             this.IsMdiContainer = true;
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
@@ -100,5 +125,8 @@
         private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nacionalidadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem naturalidadeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeFuncionarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nacionalidadeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem naturalidadeToolStripMenuItem1;
     }
 }
