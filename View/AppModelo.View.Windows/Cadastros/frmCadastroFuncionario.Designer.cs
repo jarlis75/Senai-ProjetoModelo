@@ -76,7 +76,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.BackColor = System.Drawing.Color.MediumBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -430,7 +430,7 @@
             // 
             // btnSalvarCadastro
             // 
-            this.btnSalvarCadastro.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnSalvarCadastro.BackColor = System.Drawing.Color.Lime;
             this.btnSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalvarCadastro.Location = new System.Drawing.Point(266, 520);
             this.btnSalvarCadastro.Name = "btnSalvarCadastro";
@@ -444,7 +444,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(779, 574);
             this.Controls.Add(this.btnSalvarCadastro);
             this.Controls.Add(this.btnPesquisarCep);
