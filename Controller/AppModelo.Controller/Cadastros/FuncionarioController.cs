@@ -1,4 +1,5 @@
-﻿using AppModelo.Model.Infra.Repositories;
+﻿using AppModelo.Model.Domain.Entities;
+using AppModelo.Model.Infra.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,18 @@ namespace AppModelo.Controller.Cadastros
 {
     public class FuncionarioController
     {
-        public bool SalvarCadastro(string nome, DateTime data_de_nascimento, bool sexo, string cpf, int id_nacionalidade, int id_naturalidade, string email, string telefone, string telefone_contato, string cep, string logradouro, int numero, string complemento,string bairro, string municipio, string uf )
+        public bool SalvarCadastro(string nome, DateTime dataDeNascimento, bool sexo, string cpf, int id_nacionalidade, int id_naturalidade, string email, string telefone, string telefone_contato, string cep, string logradouro, int numero, string complemento,string bairro, string municipio, string uf )
         {
             var repositorio = new FuncionarioRepository();
-            var resposta = repositorio.Inserir(nome, data_de_nascimento, sexo, cpf, id_nacionalidade, id_naturalidade, email, telefone, telefone_contato, cep, logradouro, numero, complemento, bairro, municipio, uf);
+            var resposta = repositorio.Inserir(nome, dataDeNascimento, sexo, cpf, id_nacionalidade, id_naturalidade, email, telefone, telefone_contato, cep, logradouro, numero, complemento, bairro, municipio, uf);
             return resposta;
+        }
+
+        public List<FuncionarioEntity> ObterTodosFuncionarios()
+        {
+            var repositorio = new FuncionarioRepository();
+            var resposta = repositorio.ObterTodos();
+            return (List<FuncionarioEntity>)resposta;
         }
 
     }

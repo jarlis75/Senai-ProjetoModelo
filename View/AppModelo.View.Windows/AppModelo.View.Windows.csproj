@@ -65,6 +65,12 @@
     <Compile Include="Cadastros\frmNaturalidade.Designer.cs">
       <DependentUpon>frmNaturalidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastros\frmListaDeFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmListaDeFuncionarios.Designer.cs">
+      <DependentUpon>frmListaDeFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\frmNaturalidade.resx">
       <DependentUpon>frmNaturalidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmListaDeFuncionarios.resx">
+      <DependentUpon>frmListaDeFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

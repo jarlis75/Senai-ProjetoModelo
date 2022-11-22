@@ -13,8 +13,8 @@ namespace AppModelo.View.Windows.Cadastros
         {
             InitializeComponent();
 
-            var listaDeNacionalidades = _naturalidadeController.ObterTodasNaturalidades();
-            gvNaturalidades.DataSource = listaDeNacionalidades;
+            var listaDeNaturalidades = _naturalidadeController.ObterTodasNaturalidades();
+            gvNaturalidades.DataSource = listaDeNaturalidades;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -74,8 +74,17 @@ namespace AppModelo.View.Windows.Cadastros
 
         private void btnAtualizar_Click_1(object sender, EventArgs e)
         {
-            var listaDeNaturalidades = _naturalidadeController.ObterTodasNaturalidades();
-            gvNaturalidades.DataSource = listaDeNaturalidades;
+            if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Favor Preencher o campo ID.");
+            }
+            else
+            {
+                var converterId = int.Parse(txtId.Text);
+                var controller = new NaturalidadeController();
+                var resposta = controller.CadastrarAtualizacao(txtDescricao.Text, converterId);
+                                
+            }
 
             MessageBox.Show("Naturalidades Atualizadas com Sucesso");
         }
@@ -95,6 +104,12 @@ namespace AppModelo.View.Windows.Cadastros
                 MessageBox.Show("Verifique se digitou o nome conforme descrito na lista abaixo");
 
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var listaDeNaturalidades = _naturalidadeController.ObterTodasNaturalidades();
+            gvNaturalidades.DataSource = listaDeNaturalidades;
         }
     }
 }

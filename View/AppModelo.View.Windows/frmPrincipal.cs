@@ -1,21 +1,18 @@
-﻿using AppModelo.View.Windows.Cadastros;
+﻿using AppModelo.Controller.Cadastros;
+using AppModelo.View.Windows.Cadastros;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AppModelo.View.Windows
 {
     public partial class frmPrincipal : Form
     {
+        
         public frmPrincipal()
         {
             InitializeComponent();
+
+            
         }
 
         private void funcionariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,6 +30,18 @@ namespace AppModelo.View.Windows
         private void naturalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmNaturalidade();
+            form.Show();
+        }
+
+        public void dgvListarFuncionarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+      
+        private void txtListar_Click(object sender, EventArgs e)
+        {
+            var form = new frmListaDeFuncionarios();
             form.Show();
         }
     }

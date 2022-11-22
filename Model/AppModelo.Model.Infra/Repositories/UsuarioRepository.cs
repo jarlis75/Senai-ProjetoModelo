@@ -24,7 +24,7 @@ namespace AppModelo.Model.Infra.Repositories
             return resultado;
         }
 
-
+        
         public UsuarioEntity ObterPorEmail(string email)
         {
             var sql = $"SELECT email, nome FROM usuarios WHERE email = '{email}'";

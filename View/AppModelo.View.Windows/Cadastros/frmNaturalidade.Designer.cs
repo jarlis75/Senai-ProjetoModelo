@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNaturalidade));
             this.btnSalvar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,18 +41,21 @@
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvNaturalidades)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.PowderBlue;
             this.btnSalvar.Location = new System.Drawing.Point(12, 272);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(123, 38);
-            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.Size = new System.Drawing.Size(103, 38);
+            this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Inserir";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtId
@@ -60,7 +64,7 @@
             this.txtId.Location = new System.Drawing.Point(12, 62);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(55, 20);
-            this.txtId.TabIndex = 0;
+            this.txtId.TabIndex = 8;
             // 
             // label2
             // 
@@ -82,7 +86,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chocolate;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -109,7 +113,7 @@
             this.gvNaturalidades.Location = new System.Drawing.Point(12, 99);
             this.gvNaturalidades.Name = "gvNaturalidades";
             this.gvNaturalidades.Size = new System.Drawing.Size(404, 166);
-            this.gvNaturalidades.TabIndex = 2;
+            this.gvNaturalidades.TabIndex = 14;
             // 
             // errorProvider
             // 
@@ -120,34 +124,50 @@
             this.txtDescricao.Location = new System.Drawing.Point(83, 62);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(152, 20);
-            this.txtDescricao.TabIndex = 1;
+            this.txtDescricao.TabIndex = 15;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(293, 271);
+            this.btnExcluir.Location = new System.Drawing.Point(230, 272);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(123, 38);
-            this.btnExcluir.TabIndex = 5;
+            this.btnExcluir.Size = new System.Drawing.Size(103, 38);
+            this.btnExcluir.TabIndex = 16;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(152, 271);
+            this.btnAtualizar.BackColor = System.Drawing.Color.PowderBlue;
+            this.btnAtualizar.Location = new System.Drawing.Point(121, 272);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(123, 38);
-            this.btnAtualizar.TabIndex = 4;
+            this.btnAtualizar.Size = new System.Drawing.Size(103, 38);
+            this.btnAtualizar.TabIndex = 17;
             this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.UseVisualStyleBackColor = false;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Location = new System.Drawing.Point(378, 272);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmNaturalidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(423, 313);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.txtDescricao);
@@ -162,6 +182,7 @@
             this.Text = "Naturalidade";
             ((System.ComponentModel.ISupportInitialize)(this.gvNaturalidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +201,6 @@
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -51,5 +51,11 @@ namespace AppModelo.View.Windows
         {
                
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            var form = new frmLogin();
+            Close();
+        }
     }
 }

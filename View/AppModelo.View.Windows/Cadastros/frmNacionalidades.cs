@@ -28,15 +28,27 @@ namespace AppModelo.View.Windows.Cadastros
             var controller = new NacionalidadeController();
             var descricaoMaiuscula = txtDescricao.Text.ToUpper();
 
-            var resposta = controller.Cadastrar(descricaoMaiuscula);
+            var resposta = controller.Cadastrar(descricaoMaiuscula, chkAtivo.Checked);
 
             MessageBox.Show("Naturalidade cadastrada com Sucesso");
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            var listaDeNacionalidades = _nacionalidadeController.ObterTodasNacionalidades();
-            gvNacionalidades.DataSource = listaDeNacionalidades;
+           if (string.IsNullOrEmpty(txtId.Text))
+            {
+                MessageBox.Show("Favor Preencher o campo ID.");
+            }
+            else
+            {
+                var converterId = int.Parse(txtId.Text);
+                var controller = new NacionalidadeController();
+                var resposta = controller.CadastrarAtualizacao(txtDescricao.Text, converterId);
+
+                var listaDeNacionalidades = _nacionalidadeController.ObterTodasNacionalidades();
+                gvNacionalidades.DataSource = listaDeNacionalidades;
+            }
+            
 
             MessageBox.Show("Nacionalidades Atualizadas com Sucesso");
             
@@ -55,9 +67,15 @@ namespace AppModelo.View.Windows.Cadastros
             }
             else
             {
-                MessageBox.Show("Verifique se digitou o nome conforme descrito na lista abaixo");
+                MessageBox.Show("Verifique se digitou o que deseja excluir conforme descrito na lista abaixo");
 
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var listaDeNacionalidades = _nacionalidadeController.ObterTodasNacionalidades();
+            gvNacionalidades.DataSource = listaDeNacionalidades;
         }
     }
 }

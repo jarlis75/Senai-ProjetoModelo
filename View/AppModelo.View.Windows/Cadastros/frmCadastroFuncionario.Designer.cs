@@ -76,7 +76,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chocolate;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -110,14 +110,14 @@
             this.txtId.Location = new System.Drawing.Point(17, 133);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(69, 27);
-            this.txtId.TabIndex = 0;
+            this.txtId.TabIndex = 1;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(107, 133);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(217, 27);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 2;
             this.txtNome.Tag = "Obrigatorio";
             this.txtNome.Validating += new System.ComponentModel.CancelEventHandler(this.txtNome_Validating);
             // 
@@ -154,17 +154,17 @@
             this.txtCpf.Mask = "000,000,000-00";
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(130, 27);
-            this.txtCpf.TabIndex = 3;
+            this.txtCpf.TabIndex = 4;
             this.txtCpf.Tag = "Obrigatorio";
             this.txtCpf.Validating += new System.ComponentModel.CancelEventHandler(this.txtCpf_Validating);
             // 
             // txtDataNascimento
             // 
             this.txtDataNascimento.Location = new System.Drawing.Point(344, 133);
-            this.txtDataNascimento.Mask = "00/00/0000";
+            this.txtDataNascimento.Mask = "0000/00/00";
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(127, 27);
-            this.txtDataNascimento.TabIndex = 2;
+            this.txtDataNascimento.TabIndex = 3;
             this.txtDataNascimento.Tag = "Obrigatorio";
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
@@ -182,7 +182,7 @@
             this.txtEmail.Location = new System.Drawing.Point(17, 283);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(217, 27);
-            this.txtEmail.TabIndex = 6;
+            this.txtEmail.TabIndex = 7;
             // 
             // label7
             // 
@@ -199,7 +199,7 @@
             this.txtTelefone.Mask = "(##) #####-####";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(130, 27);
-            this.txtTelefone.TabIndex = 7;
+            this.txtTelefone.TabIndex = 8;
             // 
             // label8
             // 
@@ -225,7 +225,7 @@
             this.txtEnderecoLogradouro.Location = new System.Drawing.Point(17, 416);
             this.txtEnderecoLogradouro.Name = "txtEnderecoLogradouro";
             this.txtEnderecoLogradouro.Size = new System.Drawing.Size(318, 27);
-            this.txtEnderecoLogradouro.TabIndex = 10;
+            this.txtEnderecoLogradouro.TabIndex = 12;
             // 
             // label10
             // 
@@ -241,7 +241,7 @@
             this.txtEnderecoNumero.Location = new System.Drawing.Point(362, 416);
             this.txtEnderecoNumero.Name = "txtEnderecoNumero";
             this.txtEnderecoNumero.Size = new System.Drawing.Size(109, 27);
-            this.txtEnderecoNumero.TabIndex = 11;
+            this.txtEnderecoNumero.TabIndex = 13;
             this.txtEnderecoNumero.Tag = "Obrigatorio";
             // 
             // label11
@@ -258,7 +258,7 @@
             this.txtEnderecoComplemento.Location = new System.Drawing.Point(491, 416);
             this.txtEnderecoComplemento.Name = "txtEnderecoComplemento";
             this.txtEnderecoComplemento.Size = new System.Drawing.Size(234, 27);
-            this.txtEnderecoComplemento.TabIndex = 12;
+            this.txtEnderecoComplemento.TabIndex = 14;
             // 
             // label12
             // 
@@ -275,7 +275,7 @@
             this.txtEnderecoBairro.Location = new System.Drawing.Point(17, 472);
             this.txtEnderecoBairro.Name = "txtEnderecoBairro";
             this.txtEnderecoBairro.Size = new System.Drawing.Size(217, 27);
-            this.txtEnderecoBairro.TabIndex = 13;
+            this.txtEnderecoBairro.TabIndex = 15;
             // 
             // label13
             // 
@@ -289,10 +289,10 @@
             // txtEnderecoMunicipio
             // 
             this.txtEnderecoMunicipio.Enabled = false;
-            this.txtEnderecoMunicipio.Location = new System.Drawing.Point(266, 472);
+            this.txtEnderecoMunicipio.Location = new System.Drawing.Point(254, 472);
             this.txtEnderecoMunicipio.Name = "txtEnderecoMunicipio";
             this.txtEnderecoMunicipio.Size = new System.Drawing.Size(217, 27);
-            this.txtEnderecoMunicipio.TabIndex = 14;
+            this.txtEnderecoMunicipio.TabIndex = 16;
             // 
             // label14
             // 
@@ -309,7 +309,7 @@
             this.txtEnderecoUf.Location = new System.Drawing.Point(491, 472);
             this.txtEnderecoUf.Name = "txtEnderecoUf";
             this.txtEnderecoUf.Size = new System.Drawing.Size(109, 27);
-            this.txtEnderecoUf.TabIndex = 15;
+            this.txtEnderecoUf.TabIndex = 17;
             // 
             // label15
             // 
@@ -357,7 +357,7 @@
             this.cmbNacionalidade.Location = new System.Drawing.Point(17, 204);
             this.cmbNacionalidade.Name = "cmbNacionalidade";
             this.cmbNacionalidade.Size = new System.Drawing.Size(156, 28);
-            this.cmbNacionalidade.TabIndex = 4;
+            this.cmbNacionalidade.TabIndex = 5;
             this.cmbNacionalidade.Tag = "Obrigatorio";
             this.cmbNacionalidade.SelectedIndexChanged += new System.EventHandler(this.cmbNacionalidade_SelectedIndexChanged);
             // 
@@ -385,7 +385,7 @@
             this.cmbNaturalidade.Location = new System.Drawing.Point(194, 204);
             this.cmbNaturalidade.Name = "cmbNaturalidade";
             this.cmbNaturalidade.Size = new System.Drawing.Size(130, 28);
-            this.cmbNaturalidade.TabIndex = 5;
+            this.cmbNaturalidade.TabIndex = 6;
             this.cmbNaturalidade.SelectedIndexChanged += new System.EventHandler(this.cmbNaturalidade_SelectedIndexChanged);
             // 
             // txtTelefoneContato
@@ -394,7 +394,7 @@
             this.txtTelefoneContato.Mask = "(##) #####-####";
             this.txtTelefoneContato.Name = "txtTelefoneContato";
             this.txtTelefoneContato.Size = new System.Drawing.Size(130, 27);
-            this.txtTelefoneContato.TabIndex = 8;
+            this.txtTelefoneContato.TabIndex = 9;
             // 
             // label19
             // 
@@ -411,7 +411,7 @@
             this.txtEnderecoCep.Mask = "#####-###";
             this.txtEnderecoCep.Name = "txtEnderecoCep";
             this.txtEnderecoCep.Size = new System.Drawing.Size(130, 27);
-            this.txtEnderecoCep.TabIndex = 9;
+            this.txtEnderecoCep.TabIndex = 10;
             this.txtEnderecoCep.Tag = "Obrigatorio";
             // 
             // btnPesquisarCep
@@ -419,7 +419,7 @@
             this.btnPesquisarCep.Location = new System.Drawing.Point(153, 360);
             this.btnPesquisarCep.Name = "btnPesquisarCep";
             this.btnPesquisarCep.Size = new System.Drawing.Size(92, 27);
-            this.btnPesquisarCep.TabIndex = 38;
+            this.btnPesquisarCep.TabIndex = 11;
             this.btnPesquisarCep.Text = "Pesquisar";
             this.btnPesquisarCep.UseVisualStyleBackColor = true;
             this.btnPesquisarCep.Click += new System.EventHandler(this.btnPesquisarCep_Click);
@@ -430,12 +430,12 @@
             // 
             // btnSalvarCadastro
             // 
-            this.btnSalvarCadastro.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnSalvarCadastro.BackColor = System.Drawing.Color.PowderBlue;
             this.btnSalvarCadastro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalvarCadastro.Location = new System.Drawing.Point(266, 520);
             this.btnSalvarCadastro.Name = "btnSalvarCadastro";
             this.btnSalvarCadastro.Size = new System.Drawing.Size(205, 42);
-            this.btnSalvarCadastro.TabIndex = 16;
+            this.btnSalvarCadastro.TabIndex = 39;
             this.btnSalvarCadastro.Text = "SALVAR CADASTRO";
             this.btnSalvarCadastro.UseVisualStyleBackColor = false;
             this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
