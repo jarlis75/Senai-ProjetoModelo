@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace AppModelo.Model.Infra.Repositories
 {
+
     public class FuncionarioRepository
     {
         public bool Inserir(string nome, DateTime dataDeNascimento, bool sexo, string cpf, int id_nacionalidade, int id_naturalidade, string email, string telefone, string telefone_contato, string cep, string logradouro, int numero, string complemento, string bairro, string municipio, string uf)

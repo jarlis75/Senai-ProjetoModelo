@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace AppModelo.Controller.Cadastros
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FuncionarioController
     {
         public bool SalvarCadastro(string nome, DateTime dataDeNascimento, bool sexo, string cpf, int id_nacionalidade, int id_naturalidade, string email, string telefone, string telefone_contato, string cep, string logradouro, int numero, string complemento,string bairro, string municipio, string uf )
