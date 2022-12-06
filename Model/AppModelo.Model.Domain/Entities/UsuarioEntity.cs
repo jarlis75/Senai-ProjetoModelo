@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AppModelo.Model.Domain.Entities
 {
+
+    /// <summary>
+    /// colocando as funcionalidades da entidade usuários.
+    /// </summary>
     public class UsuarioEntity
     {
         public int Id  { get; set; }

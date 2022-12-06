@@ -73,6 +73,8 @@
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.dgvListarFuncionarios);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmListaDeFuncionarios";
             this.Text = "Lista De Funcionarios";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListarFuncionarios)).EndInit();

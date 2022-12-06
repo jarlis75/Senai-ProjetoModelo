@@ -7,6 +7,12 @@ namespace AppModelo.Controller.Cadastros
 {
     public class NaturalidadeController
     {
+        /// <summary>
+        /// Solicita dados de uma nova Naturalidade para cadastro no NaturalidadeRepository
+        /// </summary>
+        /// <param name="descricao"></param>
+        /// <param name="ativo"></param>
+        /// <returns>Retorna os dados cadastrados salvos no banco</returns>
         public bool Cadastrar(string descricao, bool ativo)
         {
             var repositorio = new NaturalidadeRepository();
@@ -17,7 +23,13 @@ namespace AppModelo.Controller.Cadastros
             var resposta = repositorio.Inserir(descricao,ativo);
             return resposta;
         }
-
+        
+        /// <summary>
+        /// Chama o metodo de atualização e sobrepoe a nova descrição
+        /// </summary>
+        /// <param name="descricao"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool CadastrarAtualizacao(string descricao, int id)
         {
             var repositorio = new NaturalidadeRepository();
@@ -25,6 +37,11 @@ namespace AppModelo.Controller.Cadastros
             return resposta;
         }
 
+        /// <summary>
+        /// Exclui a Naturalidade do banco de dados atravez do ID dela.
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         public bool ExcluirNaturalidade(int Id)
         {
             var repositorio = new NaturalidadeRepository();
@@ -32,6 +49,10 @@ namespace AppModelo.Controller.Cadastros
             return resposta;
         }
 
+        /// <summary>
+        /// Chama a lista de todas as Naturalidades cadastradas no NaturalidadeRepository
+        /// </summary>
+        /// <returns></returns>
         public List<NaturalidadeEntity> ObterTodasNaturalidades()
         {
             var repositorio = new NaturalidadeRepository();

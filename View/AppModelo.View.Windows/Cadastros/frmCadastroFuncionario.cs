@@ -85,7 +85,11 @@ namespace AppModelo.View.Windows.Cadastros
 
 
 
-        // Gravar Funcionarios no Banco de dados.
+        /// <summary>
+        /// Este botão tem a função de salvar e enviar os dados inseridos nos campos para o banco de dados como um cadastro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         {
             var funController = new FuncionarioController();
@@ -94,26 +98,36 @@ namespace AppModelo.View.Windows.Cadastros
             var naturalidade = Convert.ToInt32(cmbNaturalidade.SelectedValue);
             var nacionalidade = Convert.ToInt32(cmbNacionalidade.SelectedValue);
 
-            //Recebo os dados do metodo obter para o endereço
+            // Recebo os dados do metodo obter para o endereço
             var salvou = funController.SalvarCadastro(txtNome.Text,dataNasc, rbMasculino.Checked,txtCpf.Text, nacionalidade, naturalidade, txtEmail.Text, txtTelefone.Text, txtTelefoneContato.Text, txtEnderecoCep.Text, txtEnderecoLogradouro.Text,numero, txtEnderecoComplemento.Text, txtEnderecoBairro.Text, txtEnderecoMunicipio.Text, txtEnderecoUf.Text);
             MessageBox.Show("Salvo com Sucesso!");
            LimparForm();
         }
-
+        /// <summary>
+        /// Seleção de Nacionalidade conforme tabela no banco de dados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void cmbNacionalidade_SelectedIndexChanged(object sender, EventArgs e)
         {
             var obterNacionalidade = cmbNacionalidade.SelectedIndex;
             string Index = cmbNacionalidade.Text;
             
         }
-
+        /// <summary>
+        /// Seleção de Naturalidade conforme tabela no banco de dados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void cmbNaturalidade_SelectedIndexChanged(object sender, EventArgs e)
         {
             var obterNaturalidade = cmbNaturalidade.SelectedIndex;
             string Index = cmbNaturalidade.Text;
             
         }
-
+        /// <summary>
+        /// Limpa os campos com a função LImpar criada
+        /// </summary>
         private void LimparForm()
         {
             foreach (Control controle in this.Controls)

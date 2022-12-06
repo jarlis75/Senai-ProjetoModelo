@@ -1,5 +1,8 @@
 ﻿namespace AppModelo.Model.Domain.Validators
 {
+    /// <summary>
+    /// Classe responsavel por validar se o CPF é valido atravez de um Parametro.
+    /// </summary>
     public static partial class Validadores
     {
         public struct Cpf

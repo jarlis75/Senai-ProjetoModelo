@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppModelo.Model.Domain.Entities
 {
+    /// <summary>
+    /// //colocando as funcionalidades de entidades.
+    /// </summary>
     public class FuncionarioEntity
     {
         public int Id { get; set; }

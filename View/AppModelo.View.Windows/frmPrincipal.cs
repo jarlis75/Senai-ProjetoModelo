@@ -18,30 +18,29 @@ namespace AppModelo.View.Windows
         private void funcionariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmCadastroFuncionario();
+            form.MdiParent = this;
             form.Show();
         }
 
         private void nacionalidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmNacionalidades();
+            form.MdiParent = this;
             form.Show();
         }
 
         private void naturalidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new frmNaturalidade();
+            form.MdiParent = this;
             form.Show();
-        }
-
-        public void dgvListarFuncionarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
         }
 
       
         private void txtListar_Click(object sender, EventArgs e)
         {
             var form = new frmListaDeFuncionarios();
+            form.MdiParent = this;
             form.Show();
         }
     }
